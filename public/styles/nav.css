@@ -1,0 +1,107 @@
+
+
+.navigation {
+    /* background-color: rgb(5, 1, 36); */
+    width: 100vw;
+    position: fixed ;
+    font-family: "Poppins", sans-serif;
+    z-index: 999;
+    background:rgb(1, 19, 28);
+}
+
+.navigation .nav-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    flex: 1;
+    font-size: 1.5rem;
+    color: rgb(240, 240, 243);
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+    text-transform: capitalize;
+}
+
+.navigation ul {
+    flex: 1;
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: rgb(116, 126, 131);
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    position:  relative;
+    transition: all .5s ease-in;
+}
+
+.navigation li a.active {
+    color: rgb(214, 214, 214);
+    font-weight: bold;
+    position: relative;
+}
+
+.navigation li a:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    /* background: rgb(255, 255, 255); */
+    position: absolute;
+    left: 0;
+    bottom: -10px;  
+    transition: all .5s ease; 
+}
+
+.navigation li a:focus, .navigation .btn:focus {
+    outline: none;
+}
+
+
+.navigation li a:hover:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: rgb(220, 220, 220);
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    transition: all .5s ease; 
+
+}
+
+
+
+
+.navigation li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+.navigation .btn {
+    background: rgb(3, 32, 75);
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    transition: all .5s ease-in-out;
+}
+
+.navigation .btn:hover {
+    background: rgb(7, 43, 109);
+    color: #fff;
+}

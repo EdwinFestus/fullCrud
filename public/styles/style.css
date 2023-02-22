@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: rgb(247, 247, 247); */
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    /* width: 100%; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+section.hero {
+    background: #fff;
+    height: 100vh;
+    background:linear-gradient(to left, rgb(30, 41, 46), rgb(2, 32, 46), rgb(1, 3, 14));
+}
+
+.hero .content {
+    display: flex;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+}
+
+.hero .left {
+    width: 50%;
+}
+
+
+
+.hero .right {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero .img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.hero .content .heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: rgb(213, 213, 213);
+    text-transform: capitalize;
+}
+
+.hero .content .sub-heading{
+    font-size: 1.5rem;
+    color: rgb(164, 163, 167);
+    line-height: 1.5;
+}
+
+.hero .content .btn {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 20px 50px;
+    margin-top: 5rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    background:rgb(27, 88, 202);
+    color: #fff;
+    transition: all .5s ease-in-out;
+
+}
+
+.hero .content .btn:focus {
+    outline: none;
+}
+
+.hero .content .btn:nth-of-type(odd) {
+    margin-right: 2rem;
+    background: rgb(5, 1, 68);
+    border: 2px solid rgb(5, 1, 68);
+    color: #eee;
+}
+
+.hero .content .btn:nth-of-type(odd):hover {
+    opacity: .9;
+    color: #fff;
+    background:rgb(25, 16, 157);
+}
+
+.hero .content .btn:nth-of-type(even):hover {
+    opacity: .9;
+    color: rgb(27, 88, 202);
+    background:rgb(255, 254, 254);
+}
+
+/* ============================================================================ */
+/* ============================================================================ */
+
+.about {
+    padding:100px 0 100px 0;
+}
+
+.about .header{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.about .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .card {
+    width: 350px;
+    margin: 1rem;
+    padding: 30px 50px;
+    position: relative;
+}
+
+.about .card:after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: rgb(214, 214, 214);
+    position: absolute;
+    border-radius: 30px;
+    top: 50%;
+    right: -30px;
+}
+
+.about .card:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background:rgb(214, 214, 214);
+    position: absolute;
+    border-radius: 0px 20px 20px 0px;
+    right: -40px;
+    top: 45.8%;
+    z-index: 300;
+}
+
+.about .card:last-child:after {
+    background: transparent;
+}
+
+.about .card:last-child::before {
+    background: transparent;
+}
+
+.about .card .heading {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+} 
+
+.about .card .text {
+    font-size: 1rem;
+    color: rgb(97, 96, 96);
+    line-height: 2;
+}
+
+
+/* =============================================== */
+.more {
+    padding: 150px 0;
+    background:rgb(1, 3, 14); 
+    background:rgb(1, 19, 28); 
+    background: linear-gradient(to left,rgb(1, 3, 14), rgb(1, 19, 28));
+}
+
+.more .content{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+}
+
+
+.more .left {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 20px;  */
+    color: #fff;
+}
+
+.more .left .heading {
+    font-size: 3rem;
+    margin-right: 2rem;
+    /* color: #ddd; */
+}
+
+.more .steps {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 2rem ;
+}
+
+.more .left .text {
+    font-size: 1rem;
+    font-weight: 350px;
+    line-height: 2;
+    color:rgb(184, 184, 184);
+    width: 200px;
+}
+
+.more .left .text:last-child {
+    margin-bottom: 0;
+}
+
+
+.more .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+
+.more .img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* ================================================ */
+
+.testimonials {
+    padding: 100px 0;
+    background: #01131c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .content {
+    display: flex;
+}
+
+.testimonials .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 7rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.testimonials .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 40px 30px;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.testimonials .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(242, 242, 242);
+    margin-bottom: 1rem;
+}
+
+
+.testimonials .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: rgb(253, 253, 253);
+}
+
+.testimonials .profession {
+    color:  rgb(71, 156, 247);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: italic;
+    letter-spacing: 1px;
+}
+
+.testimonials .card .text {
+    color: rgb(189, 189, 189);
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.testimonials .card .text span {
+    color:rgb(0, 0, 0);
+}
+
+.testimonials .pagination {
+    display: flex;
+    justify-content:    center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.testimonials .dot, .testimonials .dot.active{
+    width: 20px;
+    height: 20px;
+    background: rgb(90, 90, 90);
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.testimonials .dot.active, .testimonials .dot:hover {
+    background: #fff;
+}
+
+
